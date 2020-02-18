@@ -12,7 +12,7 @@ TEST_INTERVAL = 2
 
 ENV_NAME = 'CartPole-v0'
 
-dataset = Dataset(data_path="../{}_dataset.pkl".format(ENV_NAME))
+dataset = Dataset(data_path="{}_dataset.pkl".format(ENV_NAME))
 dataloader = torch.utils.data.DataLoader(dataset, batch_size=BATCH_SIZE, num_workers=4)
 
 env = gym.make(ENV_NAME)
